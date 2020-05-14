@@ -15,13 +15,13 @@ public class ContactManager {
     }
 
     // Add contact to myContact Array.
-    private void addContact(Contact newContact){
+    public void addContact(Contact newContact){
         myContact[currentContact] = newContact;
         currentContact ++;
     }
 
     // Search by name of contact.
-    private Contact searchContact(String nameContact){
+    public Contact searchContact(String nameContact){
         // Search over whole of contacts.
         for(int i = 0; i < currentContact; i++){
             if(myContact[i].name.equals(nameContact)){
